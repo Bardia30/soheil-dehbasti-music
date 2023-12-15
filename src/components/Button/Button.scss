@@ -1,0 +1,25 @@
+@use '../../styles/variables' as*;
+@use '../../styles/mixins' as *;
+
+
+.btn {
+        width: 9.6875rem;
+        height: 2.5rem;
+        @include flex($align:center, $justify: space-between);
+        padding: 0.625rem 0.75rem;
+        @include font($size: 1.25rem, $weight:700, $spacing: 3.8px);
+        text-transform: uppercase;
+        border: none;
+        border-radius:20px;
+        background: $secondary-text;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        box-shadow: $box-shadow;
+        &:hover {
+            color: $accent-color;
+        }
+    &__logo {
+        width:1.5rem;
+        height: 1.5rem;
+    }
+}

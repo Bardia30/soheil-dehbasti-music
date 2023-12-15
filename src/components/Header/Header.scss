@@ -1,0 +1,15 @@
+@use '../../styles/variables' as*;
+@use '../../styles/mixins' as *;
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $accent-color;
+    padding: 1.5rem 5rem;
+    &__buttons{
+        display: flex;
+        column-gap: 2.5rem;
+    }
+}
