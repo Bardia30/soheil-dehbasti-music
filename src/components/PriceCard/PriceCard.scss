@@ -1,0 +1,33 @@
+@use '../../styles/variables' as*;
+@use '../../styles/mixins' as *;
+
+
+
+.price-card {
+    background: $secondary-background;
+    width: 18.75rem;
+    height: 28.125rem;
+    border-radius: 20px;
+    @include flex($direction: column, $align: center);
+    
+    &__text {
+        margin:0;
+        @include font($size:2rem, $weight: 700, $transform: capitalize, $spacing:none);
+        padding-top: 1.5rem;
+        padding-bottom: 6rem;
+    }
+
+    &__prices {
+        @include flex($align: center);
+        column-gap: 1rem;
+    }
+    &__discount {
+        margin:0;
+        @include font($color: $discount-color, $weight:700, $size:1.5rem);
+        text-decoration: line-through;
+    }
+    &__price {
+        margin:0;
+        @include font($size: 2rem, $transform:none, $weight:700)
+    }
+}

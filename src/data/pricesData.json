@@ -1,0 +1,23 @@
+[
+    {
+        "pic": "images/violinCardPic.png",
+        "text": "Free Consultation",
+        "price": "FREE",
+        "isDiscount": false,
+        "discountPrice": null
+    },
+    {
+        "pic": "images/guitarCardPic.png",
+        "text": "Single Session",
+        "price": "$50",
+        "isDiscount": false,
+        "discountPrice": null
+    },
+    {
+        "pic": "images/pianoCardPic.png",
+        "text": "Four Sessions",
+        "price": "$160",
+        "isDiscount": true,
+        "discountPrice": "$200"
+    }
+]
