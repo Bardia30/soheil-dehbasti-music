@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Violin Lessons",
+        "paragraph": "Master the violin at any age with our lessons covering all RCM grade levels. We focus on preparing students for RCM certifications and ensuring they are performance-ready, fostering talent and confidence in every learner.",
+        "pic": "/images/violinPic.png",
+        "revert": false
+    },
+    {
+        "title": "Guitar Lessons",
+        "paragraph": "Explore guitar lessons that blend classical and pop genres, tailored for aspiring musicians at any skill level. Our curriculum includes learning popular pop and Persian songs, alongside classical guitar techniques. We prepare students for all levels of RCM certifications, ensuring a versatile and comprehensive learning experience that caters to diverse musical tastes and aspirations.",
+        "pic": "/images/guitarPic.png",
+        "revert": true
+    },
+    {
+        "title": "Piano Lessons",
+        "paragraph": "Immerse yourself in classical piano lessons designed for students of all abilities. Our program is structured to cover the intricacies of classical piano, preparing learners for all RCM certification levels. Emphasizing technique and musical expression, our lessons are perfect for those aspiring to master the timeless elegance of classical piano.",
+        "pic": "/images/pianoPic.png",
+        "revert": false
+    }
+]

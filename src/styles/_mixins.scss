@@ -28,12 +28,12 @@
 
 
 //styling for fonts
-@mixin font($size:1rem, $weight: 400, $color:$primary-text, $spacing:0) {
+@mixin font($size:1rem, $weight: 400, $color:$primary-text, $spacing:0, $transform: uppercase) {
     font-family: $font;
     font-size: $size;
     font-weight: $weight;
-    letter-spacing: 3.8px;
-    text-transform: uppercase;
+    letter-spacing: $spacing;
+    text-transform: $transform;
     color: $color;
     letter-spacing: $spacing;
 }
