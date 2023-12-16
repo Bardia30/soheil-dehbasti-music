@@ -7,12 +7,13 @@ const MidSection = () => {
 
     return (
         <div className="mid-section">
-            {data.map((hero) => (
+            {data.map((hero, index) => (
                 <MiniHero 
                     heroPic={process.env.PUBLIC_URL + hero.pic}
                     heroParagraph={hero.paragraph}
                     heroTitle={hero.title}
                     isRevert={hero.revert}
+                    key={index}
                 />
             ))}
         </div>

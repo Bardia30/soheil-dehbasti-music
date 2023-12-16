@@ -6,7 +6,7 @@
     background: $primary-background;
     padding:3.25rem 10rem 6.25rem 10rem;
     &__cards {
-        @include flex;
+        @include flex($justify:space-between);
         column-gap: 6.875rem;
     }
     &__title {

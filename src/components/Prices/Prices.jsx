@@ -9,8 +9,9 @@ const Prices = () => {
         <section className="prices">
             <h3 className="prices__title">Prices</h3>
             <div className="prices__cards">
-                {pricesData.map((card) => (
+                {pricesData.map((card, index) => (
                     <PriceCard
+                        key={index}
                         cardPic={card.pic}
                         cardText={card.text}
                         cardPrice={card.price}
