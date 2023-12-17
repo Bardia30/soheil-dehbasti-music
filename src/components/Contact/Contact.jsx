@@ -35,7 +35,7 @@ const Contact = () => {
             <section className="contact__left">
                 <h3 className="contact__title">Contact Us</h3>
                 <p className="contact__paragraph">Ready to embark on your musical journey? Contact us for any inquiries, to arrange a free consultation session, or to get more information about our classes. Our team is here to guide you through every step, from selecting the right course to answering all your questions. Reach out today and take the first step towards realizing your musical aspirations!</p>
-                <h3 className="contact__title"><a className="contact__link" href="tel: +14169381087">Call us Now at 416-938-1087</a></h3>
+                <h3 className="contact__title"><a className="contact__link" href="tel: +14168192817">Call us Now at 416-819-2817</a></h3>
             </section>
             <form onSubmit={sendEmail} ref={form} className="contact__form" action="submit">
                 <Input name="user_name" isTextArea={false} type="text" placeholder="enter your name..." />
