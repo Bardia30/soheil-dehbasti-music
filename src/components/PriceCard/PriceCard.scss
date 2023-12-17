@@ -12,9 +12,12 @@
     
     &__text {
         margin:0;
-        @include font($size:2rem, $weight: 700, $transform: capitalize, $spacing:none);
+        @include font($size:1.5rem, $weight: 700, $transform: capitalize, $spacing:none);
         padding-top: 1.5rem;
         padding-bottom: 6rem;
+        @include desktop {
+            @include font($size:2rem, $weight: 700, $transform: capitalize, $spacing:none);
+        }
     }
 
     &__prices {

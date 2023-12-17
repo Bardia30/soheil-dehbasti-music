@@ -13,6 +13,7 @@ const Hero = () => {
                 buttonLogo={contactLogo}
                 buttonClass="hero__button"
                 buttonText="contact"
+                buttonLink="contact"
             />
         </section>
         <img className="hero__pic" src={heroPic} alt="hero" />

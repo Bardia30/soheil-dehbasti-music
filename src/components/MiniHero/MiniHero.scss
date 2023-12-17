@@ -3,9 +3,16 @@
 
 
 .mini-hero {
-    @include flex($direction: row, $justify:space-between, $align: center);
+    @include flex($direction: column, $justify:center, $align: center);
+    text-align: center;
+    @include desktop {
+        @include flex($direction: row, $justify:space-between, $align: center);
+        text-align: left;
+    }
     &--reverted {
-        flex-direction: row-reverse
+        @include desktop {
+            flex-direction: row-reverse
+        }
     }
     &__texts {
         @include flex($direction:column);
@@ -13,16 +20,30 @@
     }
     &__title {
         margin:0;
-        @include font ($size: 2.5rem, $weight:700, $transform: none, $spacing: 2px)
+        @include font ($size: 2rem, $weight:700, $transform: none, $spacing: 2px);
+        @include desktop {
+            @include font ($size: 2.5rem, $weight:700, $transform: none, $spacing: 2px)
+        }
+        
     }
     &__paragraph {
         margin:0;
-        width: 21.875rem;
-        @include font ($size: 1.25rem, $color: $secondary-text, $transform: none, $spacing: normal)
+        @include font ($size: 1.125rem, $color: $secondary-text, $transform: none, $spacing: normal);
+        margin-bottom: 2rem;
+        @include desktop{
+            width: 21.875rem;
+            @include font ($size: 1.25rem, $color: $secondary-text, $transform: none, $spacing: normal)
+        }
+        
+        
     }
     &__pic {
         box-shadow: $box-shadow;
         border-radius: 20px;
+        width: 13.625rem;
+        @include desktop {
+            width: auto;
+        }
     }
     
 }

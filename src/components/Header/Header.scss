@@ -3,13 +3,52 @@
 
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex($align: center, $direction:column);
     background: $accent-color;
-    padding: 1.5rem 5rem;
+    padding: 1rem 2.5rem;
+    &__logo{
+        width:19.375rem;
+        margin-bottom:1.25rem;
+        @include desktop {
+            width:normal;
+            margin-bottom:0;
+        }
+    }
+    @include desktop {
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+        padding: 1.5rem 5rem;
+    }
     &__buttons{
         display: flex;
         column-gap: 2.5rem;
+    }
+    &__arrow {
+        cursor: pointer;
+        &--up{
+            transform: rotate(180deg);
+        }
+        &--down {
+            transform: rotate(360deg);
+        }
+
+    }
+    &__mobile-menu{ 
+        @include flex($direction: column, $align: center);
+        row-gap: 2rem;
+    }
+    &__mobile-buttons {
+        @include flex($direction: column, $align: center);
+        row-gap: 2rem;
+    }
+    &__btn{
+        &--mobile{
+            width: 90vw !important;
+            justify-content: center !important;
+            color: $accent-color !important;
+            column-gap:1rem;
+        }
     }
 }

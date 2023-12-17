@@ -3,8 +3,11 @@
 
 
 .mid-section {
-    @include flex($direction: column);
+    @include flex($direction: column, $justify: center, $align:center);
     row-gap: 9.375rem;
     background:$secondary-background;
     padding: 6.25rem 10rem;
+    @include desktop {
+        @include flex($direction: column);
+    }
 }

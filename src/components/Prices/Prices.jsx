@@ -6,7 +6,7 @@ import pricesData from '../../data/pricesData.json';
 
 const Prices = () => {
     return (
-        <section className="prices">
+        <section id="prices" className="prices">
             <h3 className="prices__title">Prices</h3>
             <div className="prices__cards">
                 {pricesData.map((card, index) => (

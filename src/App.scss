@@ -5,17 +5,34 @@
 
 body {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     font-family: $font;
 }
 
 
 .footer {
-    height: 7.5rem;
-    @include flex($justify:center, $align: center);
-    @include font($size:1.5rem, $spacing: 3.8px, $transform: none);
+    height: 8rem;
+    @include flex($justify: center, $align: center);
+    @include font($size: 1rem, $spacing: 3.8px, $transform: none);
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    text-align: center;
     &__link {
         text-decoration: none;
-        @include font($size:1.5rem,$weight:700, $spacing: 3.8px);
+        @include font($size: 1rem, $weight: 700, $spacing: 3.8px);
+        @include desktop {
+            @include font($size: 1.5rem, $weight: 700, $spacing: 3.8px);
+        }
+    }
+
+    @include desktop {
+        height: 7.5rem;
+        @include flex($justify: center, $align: center);
+        @include font($size: 1.5rem, $spacing: 3.8px, $transform: none);
+
+        &__link {
+            text-decoration: none;
+            @include font($size: 1.5rem, $weight: 700, $spacing: 3.8px);
+        }
     }
 }

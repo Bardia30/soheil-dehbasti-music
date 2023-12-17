@@ -6,7 +6,7 @@ const MidSection = () => {
     
 
     return (
-        <div className="mid-section">
+        <div id="mid-section" className="mid-section">
             {data.map((hero, index) => (
                 <MiniHero 
                     heroPic={process.env.PUBLIC_URL + hero.pic}

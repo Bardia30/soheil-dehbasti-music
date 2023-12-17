@@ -11,7 +11,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <MidSection />
+        <MidSection  />
         <Prices />
         <Contact />
       </main>

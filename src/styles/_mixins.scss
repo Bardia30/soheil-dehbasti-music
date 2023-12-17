@@ -10,12 +10,6 @@
     }
 }
 
-//tablet viewport mixin, refer to vriables for breakpoints
-@mixin tablet {
-    @media (min-width: $tablet-breakpoint){
-        @content;
-    }
-}
 
 //styling for flexbox positioning
 @mixin flex($align: normal, $justify:normal, $direction:row, $wrap: nowrap) {

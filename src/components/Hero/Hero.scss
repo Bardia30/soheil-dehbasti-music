@@ -3,16 +3,31 @@
 
 
 .hero {
-    @include flex($align: center, $justify: space-between);
-    padding: 5.625rem 10rem;
+    @include flex($direction:column-reverse, $justify: center, $align: center);
+    padding: 3.25rem;
     background: $primary-background;
+    @include desktop {
+        @include flex($align: center, $justify: space-between);
+        padding: 5.625rem 10rem;
+    }
     &__left{
-        margin-right:5.75rem;
-        @include flex($direction:column);
+        
+        @include flex($direction:column, $justify: center, $align:center);
+        text-align: center;
         row-gap:2.5rem;
+        @include desktop {
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-right:5.75rem;
+            text-align: left;
+        }
     }
     &__title{
-        @include font($size: 2.5rem, $weight:700, $spacing: 2px)
+        @include font($size: 1.75rem, $weight:700, $spacing: 2px);
+        @include desktop {
+            @include font($size: 2.5rem, $weight:700, $spacing: 2px)
+        }
+       
     }
     &__paragraph{
         @include font($size: 1.125rem, $color: $secondary-text, $spacing:normal, $transform: none);
@@ -20,7 +35,11 @@
         margin-top: -2rem;
     }   
     &__pic{
-        height: 45.0625rem;
-        width: 34.8125rem;
+        height: 22.5625rem;
+        width: 17.4375rem;
+        @include desktop {
+            height: 45.0625rem;
+            width: 34.8125rem;
+        }
     }
 }

@@ -31,7 +31,7 @@ const Contact = () => {
 
 
     return (
-        <div className="contact">
+        <div id="contact" className="contact">
             <section className="contact__left">
                 <h3 className="contact__title">Contact Us</h3>
                 <p className="contact__paragraph">Ready to embark on your musical journey? Contact us for any inquiries, to arrange a free consultation session, or to get more information about our classes. Our team is here to guide you through every step, from selecting the right course to answering all your questions. Reach out today and take the first step towards realizing your musical aspirations!</p>
