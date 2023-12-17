@@ -18,6 +18,16 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
+
+        const userName = e.target.user_name.value;
+        const userEmail = e.target.user_email.value;
+        const userMessage = e.target.message.value;
+
+
+        if (!userName || !userEmail || !userMessage) {
+            return alert("Please ensure all fields are completed");
+        }
+
         emailjs.sendForm(serviceId, templateId, form.current, publicKey)
             .then((result) => {
                 console.log(result.text);
