@@ -1,6 +1,7 @@
 import './Button.scss';
 import { Link as ScrollLink } from 'react-scroll';
 
+//git made me comment
 const Button = ({ buttonLogo, buttonText, buttonClass, buttonLink }) => {
   return (
     <ScrollLink  to={`${buttonLink}`} smooth={true} duration={500}>
